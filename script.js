@@ -1,4 +1,3 @@
-//menu icon//
 
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
@@ -7,7 +6,6 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
-
 
 // scroll section link //
 
@@ -36,7 +34,7 @@ window.onscroll = () => {
 
 let header = document.querySelector('.header');
 
-header.classList.toggle('sticky', window.scrollY > 100)
+header.classList.toggle('sticky', window.scrollY > 100);
 
 
 //-removing-menu-icon-//
@@ -75,11 +73,11 @@ var swiper = new Swiper(".mySwiper", {
   //-scrollreveal-//
 
   ScrollReveal({
-     reset: true,
+    //  reset: true,
      distance: '80px',
      duration: 2000,
      delay: 200
-});
+    });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .testimonial-wrapper, .contact form', { origin: 'bottom' });
